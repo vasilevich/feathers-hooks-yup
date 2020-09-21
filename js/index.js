@@ -64,7 +64,7 @@ var yupValidationHook = function (yupSchemaObject, yupOptions, translations) {
                     formattedErrors = {};
                     for (_i = 0, _a = errors_2.inner; _i < _a.length; _i++) {
                         inner = _a[_i];
-                        formattedErrors[inner.path] = inner.errors.join(",");
+                        formattedErrors[inner.path] = inner.errors;
                     }
                     throw new errors_1.BadRequest("Invalid Form", {
                         errors: translations(formattedErrors),

@@ -21,7 +21,7 @@ const yupValidationHook = (yupSchemaObject: ObjectSchema, yupOptions: ValidateOp
         } catch (errors) {
             const formattedErrors: IFormattedErrors = {};
             for (const inner of errors.inner) {
-                formattedErrors[inner.path] = inner.errors.join(",");
+                formattedErrors[inner.path] = inner.errors;
             }
             throw new BadRequest("Invalid Form", {
                 errors: translations(formattedErrors),

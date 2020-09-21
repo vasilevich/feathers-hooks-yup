@@ -1,6 +1,6 @@
 {
   "name": "feathers-hooks-yup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Feathers hook utility for schema validation and sanitization using YUP.",
   "main": "js/index.js",
   "typings": "js/index",

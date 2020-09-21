@@ -1,0 +1,42 @@
+{
+  "name": "feathers-hooks-yup",
+  "version": "1.0.0",
+  "description": "Feathers hook utility for schema validation and sanitization using YUP.",
+  "main": "js/index.js",
+  "typings": "js/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf -R js &&rimraf -R dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilevich/feathers-hooks-yup.git"
+  },
+  "dependencies": {
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@feathersjs/errors": "^4.5.8",
+    "@feathersjs/feathers": "^4.5.8",
+    "@types/yup": "^0.29.7",
+    "rimraf": "^2.6.2",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^3.9.6",
+    "uglify-js": "^3.9.3"
+  },
+  "keywords": [
+    "typescript",
+    "feathers",
+    "yup",
+    "hooks",
+    "validation",
+    "validator",
+    "forms"
+  ],
+  "author": "yosef@doar.systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasilevich/feathers-hooks-yup/issues"
+  },
+  "homepage": "https://github.com/vasilevich/feathers-hooks-yup#readme"
+}
